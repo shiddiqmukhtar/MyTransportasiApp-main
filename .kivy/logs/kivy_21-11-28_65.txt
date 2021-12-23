@@ -1,0 +1,922 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/.2/MyTransportApp-main/.kivy/logs/kivy_21-11-28_65.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  6 2021, 01:34:26) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/bin/python3"
+[INFO   ] KivyMD: v0.103.0
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.2 build 1.13@5776728'>
+[INFO   ] GL: OpenGL vendor <b'Imagination Technologies'>
+[INFO   ] GL: OpenGL renderer <b'PowerVR Rogue GE8320'>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] GL: NPOT texture support is available
+[INFO   ] Loader: using a thread pool of 2 workers
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7272c3d7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7272c3d7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7272c3d7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7272c3da90>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7272c3da90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7272c3da90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7203df52e0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7203df52e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7203df52e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7203df5640>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7203df5640>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7203df5640>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7203e190d0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7203e190d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7203e190d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71ed295250>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed295250>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed295250>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71ed2957c0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='c.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed2957c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='c.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed2957c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71ed2a04c0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed2a04c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed2a04c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71f067afd0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='c.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51667/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71f067afd0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='c.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51667/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71f067afd0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71f067aac0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51667/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71f067aac0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51667/32534.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71f067aac0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71ed2a0370>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed2a0370>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='a.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71ed2a0370>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x72732d16a0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72732d16a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51668/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72732d16a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[WARNING] stderr:     conn = connection.create_connection(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+[WARNING] stderr:     raise err
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+[WARNING] stderr:     sock.connect(sa)
+[WARNING] stderr: OSError: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+[WARNING] stderr:     conn.request(method, url, **httplib_request_kw)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 239, in request
+[WARNING] stderr:     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1279, in request
+[WARNING] stderr:     self._send_request(method, url, body, headers, encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1325, in _send_request
+[WARNING] stderr:     self.endheaders(body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1274, in endheaders
+[WARNING] stderr:     self._send_output(message_body, encode_chunked=encode_chunked)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1034, in _send_output
+[WARNING] stderr:     self.send(msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 974, in send
+[WARNING] stderr:     self.connect()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 205, in connect
+[WARNING] stderr:     conn = self._new_conn()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[WARNING] stderr:     raise NewConnectionError(
+[WARNING] stderr: urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x72732d1e80>: Failed to establish a new connection: [Errno 101] Network is unreachable
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+[WARNING] stderr:     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[WARNING] stderr: urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51667/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72732d1e80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+[WARNING] stderr:     raise ConnectionError(e, request=request)
+[WARNING] stderr: requests.exceptions.ConnectionError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Max retries exceeded with url: /16/51667/32533.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72732d1e80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))

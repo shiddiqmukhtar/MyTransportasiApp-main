@@ -1,0 +1,24 @@
+#:import utils kivy.utils
+#:include taxi_folder/taximapview.kv
+ 
+<TaxiScreen>:
+    FloatLayout:
+        GridLayout:
+            cols: 1
+            pos_hint: {"top": .895, "left": 1}
+            size_hint: 1, .795
+            id: taximapview
+        GridLayout:
+            rows: 1
+            size_hint: 1, .1
+            pos_hint: {"top": .1, "right": 1}
+            ImageButton:
+                source: "icons/back.png"
+                canvas.before:
+                    Color:
+                        rgb: app.theme_cls.primary_color if self.state == 'normal' else utils.get_color_from_hex("#6C5B7B")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                on_release:
+                    app.change_screen("home_screen", direction='left', mode='pop')

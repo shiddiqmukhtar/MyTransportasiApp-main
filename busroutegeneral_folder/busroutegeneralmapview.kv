@@ -1,0 +1,16 @@
+#:import MapView kivy_garden.mapview.MapView
+#:import GpsBlinker gpsblinker.GpsBlinker
+ 
+<BusRouteGeneralMapView>:
+    zoom: 13
+    double_tap_zoom: True
+    on_zoom:
+        self.zoom = 13 if self.zoom < 13 else self.zoom # set minimum zoom = 13
+    on_lat:
+        self.acceptroutedata() # on getting latitude
+    on_lon:
+        self.acceptroutedata() # on getting longitude
+    GpsBlinker:
+        lat: root.lat
+        lon: root.lon
+        id: busroutegeneralblinker

@@ -1,0 +1,33 @@
+#:import utils kivy.utils
+ 
+<FavouriteBusServiceScreen>:
+    FloatLayout:
+        GridLayout:
+            id: favouriteheader
+            pos_hint: {"top": .895, "left": 1}
+            size_hint: 1, .1
+            cols: 1
+        ScrollView:
+            pos_hint: {"top": .795, "left": 1}
+            size_hint: 1, .695
+            MDGridLayout:
+                id: favouritebody
+                cols: 1
+                adaptive_height: True
+                row_default_height: '100dp'
+                row_force_default: True
+                spacing: 2,2
+        GridLayout:
+            rows: 1
+            size_hint: 1, .1
+            pos_hint: {"top": .1, "right": 1}
+            ImageButton:
+                source: "icons/back.png"
+                canvas.before:
+                    Color:
+                        rgb: app.theme_cls.primary_color if self.state == 'normal' else utils.get_color_from_hex("#6C5B7B")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                on_release:
+                    app.change_screen("home_screen", direction='left', mode='pop')

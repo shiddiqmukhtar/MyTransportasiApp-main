@@ -1,0 +1,56 @@
+#:import utils kivy.utils
+#:include carpark_folder/carparkmapview.kv
+ 
+<CarParkScreen>:
+    FloatLayout:
+        GridLayout:
+            id: carparktype
+            pos_hint: {"top": .895, "left": 1}
+            size_hint: 1, .1
+            cols: 1
+        GridLayout:
+            cols: 1
+            pos_hint: {"top": .795, "left": 1}
+            size_hint: 1, .695
+            id: carparkmapview
+        GridLayout:
+            rows: 1
+            size_hint: 1, .1
+            pos_hint: {"top": .1, "right": 1}
+            LabelButton:
+                text: "[u]Back[/u]"
+                canvas.before:
+                    Color:
+                        rgb: app.theme_cls.primary_color if self.state == 'normal' else utils.get_color_from_hex("#6C5B7B")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                markup: True
+                on_release:
+                    app.change_screen("home_screen", direction='left', mode='pop')
+            LabelButton:
+                text: "[u]Car Parking[/u]"
+                canvas.before:
+                    Color:
+                        rgb: app.theme_cls.primary_color if self.state == 'normal' else utils.get_color_from_hex("#6C5B7B")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                #size_hint: .33, .1
+                #pos_hint: {"top": .1, "right": .666}
+                markup: True
+                on_release:
+                    app.change_screen("carpark_screen", direction='right', mode='push')
+            LabelButton:
+                text: "[u]Bicycle Parking[/u]"
+                canvas.before:
+                    Color:
+                        rgb: app.theme_cls.primary_color if self.state == 'normal' else utils.get_color_from_hex("#6C5B7B")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                #size_hint: .33, .1
+                #pos_hint: {"top": .1, "right": 1}
+                markup: True
+                on_release:
+                    app.change_screen("bicycleparking_screen", direction='left', mode='push')

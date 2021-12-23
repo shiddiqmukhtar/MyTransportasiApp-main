@@ -1,0 +1,203 @@
+#:include kv/homescreen.kv
+#:import utils kivy.utils
+#:include kv/taxiscreen.kv
+#:include kv/busstopscreen.kv
+#:include kv/busarrivalscreen.kv
+#:include kv/busservicescreen.kv
+#:include kv/busroutescreen.kv
+#:include kv/busroutegeneralscreen.kv
+
+#---------------- start mrt-lrt --------------#
+
+#:include kv/mrtlrtscreen.kv
+
+#---------- end mrt-lrt start train ----------#
+
+#:include kv/trainservicealertscreen.kv
+#:include kv/trainmapscreen.kv
+#:include kv/trainfarescreen.kv
+
+#--------- end train start incidents ---------#
+
+#:include kv/incidentsscreen.kv
+
+#------- end incidents start roadwork --------#
+
+#:include kv/roadworkscreen.kv
+
+#--------- end roadwork start traffic ---------#
+
+#:include kv/trafficimagescreen.kv
+
+#------ end traffic road opening start --------#
+
+#:include kv/roadopeningscreen.kv
+
+#--------- end roadopening start --------------#
+
+#:include kv/favouritebusservicescreen.kv
+
+#----------- end favourite start --------------#
+
+#:include kv/profilephotoscreen.kv
+
+#---------- end filemanager start -------------#
+
+#:include kv/carparkscreen.kv
+
+#---------- end carpark start bicy-------------#
+
+#:include kv/bicycleparkingscreen.kv
+
+#---------- end bicycle start bicy-------------#
+ 
+Screen:
+    MDToolbar :
+        id: titlename
+        title : 'Sg Transport'
+        left_action_items : [["menu", lambda x : nav_drawer.toggle_nav_drawer()]]
+        md_bg_color: app.theme_cls.primary_color
+        #elevation : 8
+        pos_hint: {"top": 1, "left": 1}
+        size_hint: 1, .1
+        md_bg_color: 1,0,0,1
+
+    NavigationLayout :
+        ScreenManager :
+            id: screen_manager
+            size_hint: 1, 1
+            pos_hint: {"top": 1, "left": 1}
+            
+            HomeScreen:
+                name: "home_screen"
+                id: home_screen
+                
+            TaxiScreen:
+                name: "taxi_screen"
+                id: taxi_screen
+                
+            BusStopScreen:
+                name: "bus_stop_screen"
+                id: bus_stop_screen
+                
+            BusServiceScreen:
+                name: "bus_service_screen"
+                id: bus_service_screen
+                
+            BusArrivalScreen:
+                name: "bus_arrival_screen"
+                id: bus_arrival_screen
+                
+            BusRouteScreen:
+                name: "bus_route_screen"
+                id: bus_route_screen
+                
+            BusRouteGeneralScreen:
+                name: "bus_route_general_screen"
+                id: bus_route_general_screen
+                
+            ProfilePhotoScreen:
+                name: "profile_photo_screen"
+                id: profile_photo_screen
+                
+            MrtLrtScreen:
+                name: "mrtlrt_screen"
+                id: mrtlrt_screen
+                
+            TrainServiceAlertScreen:
+                name: "trainservicealert_screen"
+                id: trainservicealert_screen
+                
+            TrainMapScreen:
+                name: "trainmap_screen"
+                id: trainmap_screen
+                
+            TrainFareScreen:
+                name: "trainfare_screen"
+                id: trainfare_screen
+                
+            IncidentsScreen:
+                name: "incidents_screen"
+                id: incidents_screen
+                
+            RoadWorkScreen:
+                name: "roadwork_screen"
+                id: roadwork_screen
+                
+            TrafficImageScreen:
+                name: "trafficimage_screen"
+                id: trafficimage_screen
+                
+            RoadOpeningScreen:
+                name: "roadopening_screen"
+                id: roadopening_screen
+                
+            FavouriteBusServiceScreen:
+                name: "favouritebusservice_screen"
+                id: favouritebusservice_screen
+                
+            ProfilePhotoScreen:
+                name: "profilephoto_screen"
+                id: profilephoto_screen
+                
+            CarParkScreen:
+                name: "carpark_screen"
+                id: carpark_screen
+                
+            BicycleParkingScreen:
+                name: "bicycleparking_screen"
+                id: bicycleparking_screen
+              
+                      
+        MDNavigationDrawer :
+            id : nav_drawer
+            
+            BoxLayout : 
+                orientation : 'vertical'
+                spacing : '8dp'
+                padding : '8dp'
+                 
+                ImageButton:
+                    id: profile
+                    source: app.img_source_path
+                    canvas.before:
+                        Color:
+                            rgb: app.theme_cls.primary_color if self.state == 'normal' else utils.get_color_from_hex("#6C5B7B")
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                    on_release:
+                        nav_drawer.toggle_nav_drawer()
+                        app.change_screen("profile_photo_screen", direction='right', mode='push')
+                MDLabel :
+                    text : 'Profile Picture'
+                    font_style : 'Subtitle1'
+                    size_hint_y : None
+                    height : self.texture_size[1]
+                    theme_text_color: 'Custom'
+                    text_color: [0,0,0,1] if app.theme_cls.theme_style == "Light" else [1,1,1,1]
+                MDLabel :
+                    text : 'Welcome to My Singapore Transport Tracking App!'
+                    font_style : 'Caption'
+                    size_hint_y : None
+                    height : self.texture_size[1]
+                    theme_text_color: 'Custom'
+                    text_color: [0,0,0,1] if app.theme_cls.theme_style == "Light" else [1,1,1,1]
+                    
+                ScrollView :
+                    
+                    MDList :
+                        OneLineIconListItem :
+                            text : 'Change Theme'
+                            on_release: 
+                                app.show_theme_picker()
+                                nav_drawer.toggle_nav_drawer()
+                            IconLeftWidget:
+                                icon: 'pencil'
+                        OneLineIconListItem :
+                            text : 'Favourite'
+                            on_release: 
+                                app.go_to_favourite_bus()
+                                nav_drawer.toggle_nav_drawer()
+                            IconLeftWidget:
+                                icon: 'star'

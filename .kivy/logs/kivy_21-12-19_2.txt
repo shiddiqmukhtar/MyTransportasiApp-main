@@ -1,0 +1,45 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/.2/MyTransportApp-main/.kivy/logs/kivy_21-12-19_2.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  6 2021, 01:34:26) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/bin/python3"
+[INFO   ] KivyMD: v0.103.0
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.2 build 1.13@5776728'>
+[INFO   ] GL: OpenGL vendor <b'Imagination Technologies'>
+[INFO   ] GL: OpenGL renderer <b'PowerVR Rogue GE8320'>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/.2/MyTransportApp-main/main.py", line 18, in <module>
+[WARNING] stderr:     from searchpopupmenu import SearchPopupMenu
+[WARNING] stderr:   File "/storage/emulated/0/.2/MyTransportApp-main/searchpopupmenu.py", line 1, in <module>
+[WARNING] stderr:     from kivymd.uix.dialog import MDInputDialog
+[WARNING] stderr:   File "/storage/emulated/0/.2/MyTransportApp-main/kivymd/uix/dialog.py", line 104, in <module>
+[WARNING] stderr:     Builder.load_string(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/lang/builder.py", line 373, in load_string
+[WARNING] stderr:     parser = Parser(content=string, filename=fn)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/lang/parser.py", line 402, in __init__
+[WARNING] stderr:     self.parse(content)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/lang/parser.py", line 511, in parse
+[WARNING] stderr:     objects, remaining_lines = self.parse_level(0, lines)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/lang/parser.py", line 684, in parse_level
+[WARNING] stderr:     raise ParserException(self, ln,
+[WARNING] stderr: kivy.lang.parser.ParserException: Parser: File "<inline>", line 104:
+[WARNING] stderr: ...
+[WARNING] stderr:     102:            text: "Powered by [color=#0b2d39
+[WARNING] stderr:     103:]M.S.[/color]"
+[WARNING] stderr: >>  104:            halign: 'right'
+[WARNING] stderr:     105:            font_style: "Caption"
+[WARNING] stderr:     106:            markup: True
+[WARNING] stderr: ...
+[WARNING] stderr: Invalid indentation (too many levels)

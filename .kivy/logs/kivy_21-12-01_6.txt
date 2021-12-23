@@ -1,0 +1,84 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/.2/MyTransportApp-main/.kivy/logs/kivy_21-12-01_6.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  6 2021, 01:34:26) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/bin/python3"
+[INFO   ] KivyMD: v0.103.0
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.2 build 1.13@5776728'>
+[INFO   ] GL: OpenGL vendor <b'Imagination Technologies'>
+[INFO   ] GL: OpenGL renderer <b'PowerVR Rogue GE8320'>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] GL: NPOT texture support is available
+[INFO   ] Loader: using a thread pool of 2 workers
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+[WARNING] stderr:     six.raise_from(e, None)
+[WARNING] stderr:   File "<string>", line 3, in raise_from
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+[WARNING] stderr:     httplib_response = conn.getresponse()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 1371, in getresponse
+[WARNING] stderr:     response.begin()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 319, in begin
+[WARNING] stderr:     version, status, reason = self._read_status()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/http/client.py", line 280, in _read_status
+[WARNING] stderr:     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/socket.py", line 704, in readinto
+[WARNING] stderr:     return self._sock.recv_into(b)
+[WARNING] stderr: socket.timeout: timed out
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+[WARNING] stderr:     resp = conn.urlopen(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+[WARNING] stderr:     retries = retries.increment(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+[WARNING] stderr:     raise six.reraise(type(error), error, _stacktrace)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/packages/six.py", line 770, in reraise
+[WARNING] stderr:     raise value
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+[WARNING] stderr:     httplib_response = self._make_request(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+[WARNING] stderr:     self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+[WARNING] stderr:     raise ReadTimeoutError(
+[WARNING] stderr: urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Read timed out. (read timeout=5)
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 107, in _check_executor
+[WARNING] stderr:     result = future.result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+[WARNING] stderr:     return self.__get_result()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+[WARNING] stderr:     raise self._exception
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+[WARNING] stderr:     result = self.fn(*self.args, **self.kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy_garden/mapview/downloader.py", line 90, in _load_tile
+[WARNING] stderr:     response = requests.get(uri, headers={'User-agent': USER_AGENT}, timeout=5)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 75, in get
+[WARNING] stderr:     return request('get', url, params=params, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/api.py", line 61, in request
+[WARNING] stderr:     return session.request(method=method, url=url, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+[WARNING] stderr:     resp = self.send(prep, **send_kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+[WARNING] stderr:     r = adapter.send(request, **kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+[WARNING] stderr:     raise ReadTimeout(e, request=request)
+[WARNING] stderr: requests.exceptions.ReadTimeout: HTTPConnectionPool(host='b.tile.openstreetmap.org', port=80): Read timed out. (read timeout=5)

@@ -1,0 +1,16 @@
+#:import MapView kivy_garden.mapview.MapView
+#:import GpsBlinker gpsblinker.GpsBlinker
+ 
+<BicycleParkingMapView>:
+    zoom: 18
+    double_tap_zoom: True
+    on_zoom:
+        self.zoom = 18 if self.zoom < 18 else self.zoom # set minimum zoom = 18
+    on_lat:
+        self.start_getting_bicycleparking_in_fov() # on getting latitude
+    on_lon:
+        self.start_getting_bicycleparking_in_fov() # on getting longitude
+    GpsBlinker:
+        lat: root.lat
+        lon: root.lon
+        id: bicycleparkingblinker
