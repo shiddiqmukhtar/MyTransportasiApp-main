@@ -36,7 +36,7 @@ let num = Math.random();
 
 ```
 
-![alt text](http://picsum.photos/400/400)
+![alt text](http://picsum.photos/600/400)
 
 Some paragraph with text.
 
