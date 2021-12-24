@@ -2,7 +2,7 @@
 
 ## Singapore
 
-### New kivy-garden
+### New kivy-garden and kivy
 
 Just a sample repo for learning the basics of GitHub.
 
